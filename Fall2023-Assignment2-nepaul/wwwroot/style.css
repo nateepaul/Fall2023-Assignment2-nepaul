@@ -1,0 +1,63 @@
+body {
+    background-image: url("img/alexandra-zelena-uia0osRgNn0-unsplash.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%
+}
+
+#content {
+    top: 50%;
+    transform: translate(0, -25%);
+    display: block;
+    text-align: center;
+    cursor: context-menu;
+}
+
+#time {
+    font-family: Britannic;
+    font-weight: bold;
+    background-color: #171717e7;
+    color: #d3d1d1;
+    width: 10%;
+    font-size: 3vh; 
+    position: absolute;
+    bottom: 0vh;
+    left: 0vh;
+    border-radius: 0em 1em 0em 0em;
+}
+
+#name {
+    font-family: Britannic;
+    font-size: 20vw;
+    color: #d3d1d1;
+    margin-bottom: 0;
+    display: block;
+}
+
+#query {
+    background: #171717e7;
+    color: #d3d1d1;
+    text-align: center;
+    width: 50%;
+    outline: none;
+    border-radius: 1em 1em 1em 1em;
+    font-family: Britannic;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+#search {
+    background-color: #171717e7;
+    color: #d3d1d1;
+    border-radius: 1em 1em 1em 1em;
+    text-align: center;
+    font-family: Britannic;
+    font-weight: bold;
+    position: relative;
+    top: -1vh;
+    font-size: 3vh;
+    width: 10%;
+}
+
+#current-time
