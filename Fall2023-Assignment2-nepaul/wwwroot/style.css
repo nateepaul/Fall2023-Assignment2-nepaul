@@ -19,7 +19,7 @@ body {
     font-weight: bold;
     background-color: #171717e7;
     color: #d3d1d1;
-    width: 10%;
+    width: 15%;
     font-size: 3vh; 
     position: absolute;
     bottom: 0vh;
@@ -57,7 +57,19 @@ body {
     position: relative;
     top: -1vh;
     font-size: 3vh;
-    width: 10%;
+    width: 15%;
 }
 
-#current-time
+#current-time {
+    visibility: hidden;
+    font-family: Britannic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#searchResults {
+    visibility: hidden;
+    font-family: Britannic;
+    font-weight: bold;
+    text-align: center;
+}

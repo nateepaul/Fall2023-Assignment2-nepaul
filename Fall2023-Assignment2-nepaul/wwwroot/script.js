@@ -32,10 +32,16 @@ $("#time").click(function () {
     var dt = new Date();
     var time = dt.getHours() + ":" + dt.getMinutes();
     $("#current-time h1").html(time);
+    $("#current-time").dialog();
+    $("#current-time").css("visibility", "visible")
 });
 $("#query").click(function () {
     $("#query").attr("value", "");
 })
+
+$("#search").click(function () {
+    apiSearch();
+});
 
 function apiSearch() {
     var params = {
@@ -46,7 +52,7 @@ function apiSearch() {
     };
 
     $.ajax({
-        url: 'https://api.bing.microsoft.com/v7.0/search' + $.param(params),
+        url: 'https://api.bing.microsoft.com/v7.0/search?' + $.param(params),
         type: 'GET',
         headers: {
             'Ocp-Apim-Subscription-Key': 'b9f68bf2905143ddb5587649fa00ec92'
@@ -59,8 +65,13 @@ function apiSearch() {
                 results += `<p><a href="${data.webPages.value[i].url}">${data.webPages.value[i].name}</a>: ${data.webPages.value[i].snippet}</p>`;
             }
 
-            $('#searchResults').html(results);
-            $('#searchResults').dialog();
+            $('#searchResults p').html(results);
+            $('#searchResults').css("visibility", "visible");
+            $('#searchResults').dialog({
+                maxHeight: 500,
+                width: 600,
+                maxWidth: 600
+            });
         })
         .fail(function () {
             alert('error');
