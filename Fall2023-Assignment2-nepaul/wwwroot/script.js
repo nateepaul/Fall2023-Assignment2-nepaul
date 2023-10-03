@@ -7,23 +7,23 @@ img3 = "img/mitchell-luo-mAThYuM_v7s-unsplash.jpg"
 count = 0;
 $("#name").click(function () {
     if (count == 0) {
-        $("body").css("background-image", "url(" + img0 + ")");
+        $("html").css("background-image", "url(" + img0 + ")");
         count++;
     }
     else if (count == 1) {
-        $("body").css("background-image", "url(" + img1 + ")");
+        $("html").css("background-image", "url(" + img1 + ")");
         count++;
     }
     else if (count == 2) {
-        $("body").css("background-image", "url(" + img2 + ")");
+        $("html").css("background-image", "url(" + img2 + ")");
         count++;
     }
     else if (count == 3) {
-        $("body").css("background-image", "url(" + img3 + ")");
+        $("html").css("background-image", "url(" + img3 + ")");
         count++;
     }
     else if (count == 4) {
-        $("body").css("background-image", "url(" + home + ")");
+        $("html").css("background-image", "url(" + home + ")");
         count = 0;
     }
 });
